@@ -1,0 +1,99 @@
+body {
+  font-family: "Oxanium", cursive;
+  background-color: #000000;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  background-image: url(../imagens/fundo-the-king-of-fithers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 750px;
+}
+
+.selecao-de-personagens {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  min-height: calc(100vh 272px);
+  justify-content: center;
+}
+
+.selecao-de-personagens .lista-de-personagens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.selecao-de-personagens .personagens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 805px;
+  gap: 222px;
+}
+
+.selecao-de-personagens .personagens .titulo {
+  font-size: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #47f4ff;
+  width: 95%;
+  text-align: center;
+  margin-bottom: -194px;
+}
+
+.lista-de-personagens .personagem img {
+  width: 100%;
+  height: 100%;
+}
+
+.lista-de-personagens .personagem.selecionado {
+  box-shadow: 0px 0px 24px 5px #3134f0a1;
+}
+
+.personagem-selecionado {
+  text-align: center;
+  max-height: 480px;
+}
+
+.personagem-selecionado .personagem-grande {
+  margin-top: -147px;
+  width: 160%;
+  max-height: 350%;
+  position: relative;
+  margin-left: -74px;
+}
+
+.personagem-selecionado .nome-personagem {
+  border-bottom: 2px solid #47f4ff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 37px;
+}
+
+.personagem-selecionado .descricao-personagem {
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: -25px;
+  width: 300px;
+}
